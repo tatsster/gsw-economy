@@ -20,5 +20,5 @@
 # Go workspace file
 go.work
 
-.credentials.json
+credentials.json
 token.json
