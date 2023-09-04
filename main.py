@@ -71,6 +71,8 @@ def handleResource(data: dict) -> pd.DataFrame:
     merged_df['timestamp'] = merged_df['timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S')
     merged_df.fillna('', inplace=True)
 
+    return merged_df
+
 
 if __name__ == '__main__':
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
@@ -86,6 +88,7 @@ if __name__ == '__main__':
 
     if response.status_code == 200:
         json_data = response.json()
+        df = handleResource(json_data)
         
-        sheet1.update("A1", [merged_df.columns.tolist()])
-        sheet1.update("A2", merged_df.values.tolist())
+        sheet1.update("A1", [df.columns.tolist()])
+        sheet1.update("A2", df.values.tolist())
