@@ -4,30 +4,29 @@ allowed_cities:
     - Lymhurst
     - Martlock
     - Thetford
-
 ore:
     sheetName: "Ore"
+    t5_line: 2
+    t6_line: 175
+    t7_line: 350
+    t8_line: 525
     target:
         - T5_ORE
         - T6_ORE
         - T7_ORE
         - T8_ORE
-
         - T5_ORE_LEVEL1@1
         - T6_ORE_LEVEL1@1
         - T7_ORE_LEVEL1@1
         - T8_ORE_LEVEL1@1
-
         - T5_ORE_LEVEL2@2
         - T6_ORE_LEVEL2@2
         - T7_ORE_LEVEL2@2
         - T8_ORE_LEVEL2@2
-
         - T5_ORE_LEVEL3@3
         - T6_ORE_LEVEL3@3
         - T7_ORE_LEVEL3@3
         - T8_ORE_LEVEL3@3
-        
         - T5_ORE_LEVEL4@4
         - T6_ORE_LEVEL4@4
         - T7_ORE_LEVEL4@4
